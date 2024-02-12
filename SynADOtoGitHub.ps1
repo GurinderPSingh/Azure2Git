@@ -3,7 +3,7 @@ param(
      [string]$GitHubDestinationPAT,
  
      [Parameter()]
-     [string]$ADOSourcePAT,
+     [string]$ADOSourcePAT
      
 
  )
@@ -12,9 +12,9 @@ param(
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
 Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
-#$AzureRepoName = "LINC_test2"
-#$ADOCloneURL = "dev.azure.com/gpsinghLTC/LINC_test2/_git/LINC_test2"
-#$GitHubCloneURL = "github.com/GurinderPSingh/LINC_test2.git"
+$AzureRepoName = "LINC_test2"
+$ADOCloneURL = "dev.azure.com/gpsinghLTC/LINC_test2/_git/LINC_test2"
+$GitHubCloneURL = "github.com/GurinderPSingh/LINC_test2.git"
 $stageDir = pwd | Split-Path
 Write-Host "stage Dir is : $stageDir"
 $githubDir = $stageDir +"\"+"gitHub"
