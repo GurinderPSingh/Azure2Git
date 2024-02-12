@@ -19,7 +19,7 @@ $stageDir = pwd | Split-Path
 Write-Host "stage Dir is : $stageDir"
 $githubDir = $stageDir +"\"+"gitHub"
 Write-Host "github Dir : $githubDir"
-$destination = $githubDir+"\"+"test%20LINC"+".git"
+$destination = $githubDir+"\"+$AzureRepoName"+".git"
 Write-Host "destination: $destination"
 #Please make sure, you remove https from azure-repo-clone-url
 $sourceURL = "https://$($ADOSourcePAT)"+"@"+"$($ADOCloneURL)"
