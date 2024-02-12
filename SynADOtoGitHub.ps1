@@ -24,7 +24,7 @@ Write-Host "stage Dir is : $stageDir"
 $githubDir = $stageDir +"\"+"gitHub"
 Write-Host "github Dir : $githubDir"
 
-$destination = $githubDir+"\"+ LINC_test2 +".git"
+$destination = $githubDir
 Write-Host "destination: $destination"
 
 #Please make sure, you remove https from azure-repo-clone-url
