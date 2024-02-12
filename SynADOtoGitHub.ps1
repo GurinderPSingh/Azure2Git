@@ -13,8 +13,7 @@ Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
 Write-Host ' reflect Azure Devops repo changes to GitHub repo'
 Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - - '
 
-$AzureRepoName = "LINC_test2"
-Write-Host "Name: $AzureRepoName"
+
 
 $ADOCloneURL = "dev.azure.com/gpsinghLTC/LINC_test2/_git/LINC_test2"
 $GitHubCloneURL = "github.com/GurinderPSingh/LINC_test2.git"
@@ -25,7 +24,7 @@ Write-Host "stage Dir is : $stageDir"
 $githubDir = $stageDir +"\"+"gitHub"
 Write-Host "github Dir : $githubDir"
 
-$destination = $githubDir+"\"+ $AzureRepoName +".git"
+$destination = $githubDir+"\"+ LINC_test2 +".git"
 Write-Host "destination: $destination"
 
 #Please make sure, you remove https from azure-repo-clone-url
